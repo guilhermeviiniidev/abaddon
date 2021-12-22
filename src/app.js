@@ -1,22 +1,6 @@
-class Drone {
-  constructor(id) {
-    this._id = id;
-  }
+import { Car } from "./classes/car.js";
+import { Drone } from "./classes/drone.js";
 
-  static maxSpeed = 2000;
-
-  static getId(drone) {
-    return drone.id;
-  }
-
-  get id() {
-    return this._id + " TEMPORÁRIO";
-  }
-
-  set id(id) {
-    this._id = id;
-  }
-}
-
-const drone = new Drone("A123");
-console.log(Drone.getId(drone));
+const car = new Car();
+const drone = new Drone();
+console.log(car, drone);
